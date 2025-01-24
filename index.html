@@ -1,13 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Viragh </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hibák Weboldal</title>
+    <style>
+        /* Alap stílusok */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9; /* Világos háttér */
+            color: #333; /* Sötétebb szöveg szín */
+            padding: 20px;
+        }
+
+        /* Fejléc stílusai */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #FF6347; /* Piros szín */
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 2.5em;
+        }
+
+        /* Menü stílusai */
+        nav {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #FF6347;
+            font-size: 1.2em;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f1f1f1;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #FF6347;
+            color: white;
+        }
+
+        /* Színes keretes szekciók */
+        .content-section {
+            background-color: white;
+            border: 2px solid #FF6347;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            color: #FF6347;
+        }
+
+        .content-section p {
+            line-height: 1.6;
+        }
+
+        /* Hibák részletezése */
+        .error-detail {
+            background-color: #ffe6e6; /* Halvány rózsaszín háttér */
+            border: 2px solid #ff4d4d; /* Piros keret */
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .error-detail h3 {
+            color: #ff4d4d;
+        }
+
+        /* Média lekérdezés - reszponzivitás */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav ul {
+                display: block;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+
+            .content-section {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Viragh</h1>
-    Haza szeretnék menni a 6. óra után pedig 8. óráig lennék 
-    
+
+    <!-- Fejléc -->
+    <header>
+        <h1>Hibák és Megoldások</h1>
+    </header>
+
+    <!-- Menü -->
+    <nav>
+        <ul>
+            <li><a href="#hiba1">Hiba 1</a></li>
+            <li><a href="#hiba2">Hiba 2</a></li>
+            <li><a href="#hiba3">Hiba 3</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hibák Szekciói -->
+    <div class="content-section" id="hiba1">
+        <h2>Hiba 1: A rendszer lassú válaszidői</h2>
+        <p>Ez a probléma általában akkor fordul elő, ha a szerver túlterhelt vagy a hálózati kapcsolat nem stabil.</p>
+        <div class="error-detail">
+            <h3>Lehetséges megoldás:</h3>
+            <p>Próbáld meg csökkenteni a hálózati forgalmat, és biztosítsd, hogy a szerver megfelelő erőforrásokkal rendelkezzen.</p>
+        </div>
+    </div>
+
+    <div class="content-section" id="hiba2">
+        <h2>Hiba 2: Adatbázis-kapcsolati hiba</h2>
+        <p>Ez akkor fordul elő, ha az alkalmazás nem képes csatlakozni az adatbázishoz, gyakran hibás konfiguráció vagy szerver probléma miatt.</p>
+        <div class="error-detail">
+            <h3>Lehetséges megoldás:</h3>
+            <p>Győződj meg róla, hogy az adatbázis kiszolgáló elérhető és a helyes hitelesítő adatokkal próbálsz csatlakozni.</p>
+        </div>
+    </div>
+
+    <div class="content-section" id="hiba3">
+        <h2>Hiba 3: Böngésző inkompatibilitás</h2>
+        <p>Bizonyos böngészők nem támogatják a modern webes technológiákat, ami hibákhoz vezethet az alkalmazás megjelenítésében.</p>
+        <div class="error-detail">
+            <h3>Lehetséges megoldás:</h3>
+            <p>Frissítsd a böngészőt a legújabb verzióra, vagy használd a támogatott böngészőket, mint például a Chrome vagy Firefox.</p>
+        </div>
+    </div>
+
 </body>
 </html>
